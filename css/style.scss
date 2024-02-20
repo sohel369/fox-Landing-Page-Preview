@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 54px;
+    background: #000000d8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    h1 {
+        color: white;
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 26px;
+
+        i {
+            color: rgb(58, 165, 58);
+            font-size: 20px;
+        }
+
+        span {
+            color: rgb(19, 149, 19);
+            font-weight: 200;
+        }
+    }
+
+    button {
+        padding: 8px 20px;
+        color: white;
+        background: rgb(77, 139, 19);
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+}
+
+.section_fox {
+    width: 100%;
+    height: 120vh;
+    background: #00CDCD;
+    padding-top: 100px;
+
+    .fox_navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            display: flex;
+
+            h2 {
+                margin-left: 4px;
+                margin-right: 40px;
+                cursor: pointer;
+                font-size: 26px;
+                color: white;
+                animation: animate 4s linear infinite;
+            }
+
+            h3 {
+                color: white;
+                margin-left: 40px;
+                margin-top: 10px;
+                display: inline-flex;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        ul {
+            margin-right: 100px;
+        } li {
+            display: inline-block;
+            margin-right: 16px;
+
+            a {
+                font-size: 24px;
+                font-weight: 300;
+                color: white;
+                position: relative;
+            }
+            .active::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                width: 100%;
+                height: 3px;
+                background: white;
+            }
+            a::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                background: white;
+                width: 0;
+                height: 3px;
+                border-radius: 12px;
+                transition: .5s;
+            }
+            a:hover::after{
+                width: 100%;
+            }
+        }
+    }
+    .content_fox {
+        display: flex;
+        align-items: center;
+        margin-top: 100px;
+        .content_text {
+            width: 40%;
+            margin-left: 15%;
+            p{
+                color: white;
+            }
+            h1{
+                font-size: 50px;
+                text-transform: uppercase;
+                color: white;
+                margin: 20px 0;
+                font-weight: bold;
+            }
+            h3{
+                color: white;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            button{
+                background: white;
+                color: #00CDCD;
+                padding: 10px 20px;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+            }
+        }
+        .content_img img {
+            border-radius: 20px;
+            margin-left: 100px;
+        }
+    }
+}
+.blog {
+    width: 100%;
+    height: 70vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .box{
+            width: 280px;
+            height: 280px;
+            text-align: center;
+            background: #00CDCD;
+            padding: 0 30px;
+            margin-right: 20px;
+            i{
+                font-size: 60px;
+                margin-top: 50px;
+                color: white;
+            }
+            h2{
+                font-size: 28px;
+                color: white;
+                text-transform: capitalize;
+                margin-top: 20px;
+            }
+            p{
+                color: white;
+            }
+        }
+    }
+
+
+
+
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
