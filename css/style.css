@@ -703,6 +703,69 @@ body {
   background: #F2CE5F;
 }
 
+.download_app {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #8fabbe;
+  overflow: hidden;
+}
+.download_app img {
+  transform: translateY(120px);
+}
+.download_app .text h1 {
+  font-size: 50px;
+  color: #555;
+}
+.download_app .text p {
+  text-transform: capitalize;
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.download_app button {
+  margin-right: 20px;
+  background: #00CDCD;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 16px 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.download_app button i {
+  font-size: 30px;
+  transform: translate(-60px, 8px);
+}
+.download_app button h4 {
+  margin-left: 20px;
+  margin-top: -20px;
+}
+.download_app button:hover {
+  background: #F2CE5F;
+}
+
+.touch {
+  height: 90vh;
+  width: 100%;
+}
+.touch h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #031321;
+  text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.touch h1 span {
+  color: #00CDCD;
+}
+.touch h2 {
+  text-align: center;
+}
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);

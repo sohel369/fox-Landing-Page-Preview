@@ -784,6 +784,7 @@ body {
 
         .profile {
             transform: translateX(-100px);
+
             h4 {
                 font-size: 40px;
                 text-transform: capitalize;
@@ -834,6 +835,81 @@ body {
     }
 }
 
+.download_app {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #8fabbe;
+    overflow: hidden;
+
+    img {
+        transform: translateY(120px);
+    }
+
+    .text {
+        h1 {
+
+            font-size: 50px;
+            color: #555;
+        }
+
+        p {
+            text-transform: capitalize;
+            color: #000;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+
+    button {
+        margin-right: 20px;
+        background: #00CDCD;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 16px 50px;
+        cursor: pointer;
+        transition: .5s;
+
+        i {
+            font-size: 30px;
+            transform: translate(-60px, 8px);
+        }
+
+        h4 {
+            margin-left: 20px;
+            margin-top: -20px;
+        }
+    }
+
+    button:hover {
+        background: #F2CE5F;
+    }
+}
+
+.touch {
+    height: 90vh;
+    width: 100%;
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+        color: #031321;
+        text-transform: capitalize;
+        margin-top: 20px;
+        margin-bottom: 10px;
+
+        span {
+            color: #00CDCD;
+        }
+    }
+
+    h2{
+        text-align: center;
+    }
+}
 
 
 @keyframes animate {
